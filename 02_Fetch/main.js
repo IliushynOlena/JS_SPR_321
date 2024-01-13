@@ -1,4 +1,5 @@
 // API 
+const bank = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json';
 const gitHubUsersApi = 'https://api.github.com/users';
 const privateExchangeApi = 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5';
 const monoKurs = 'https://api.monobank.ua/bank/currency'
@@ -53,10 +54,11 @@ async function showGitHubUserAvatar(login) {
     avatarImg.src = result.avatar_url;
 }
 
+showApiResult(bank);
 //showApiResult(privateExchangeApi);
 //showApiResult(monoKurs);
 //showApiResult(gismeteoApi);
 
 //showGitHubUserAvatar('IliushynOlena');
 //showGitHubUserAvatar('mojombo');
-showGitHubUserAvatar('vladtymo');
+//showGitHubUserAvatar('vladtymo');
